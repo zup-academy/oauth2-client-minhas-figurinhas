@@ -40,4 +40,4 @@ feign:
         decode404: true
         loggerLevel: full
 
-logging.level.br.com.zup.edu.exposicao.client.FigurinhasClient: DEBUG
+logging.level.br.com.zup.edu.freemium.client.MinhasFigurinhasClient: DEBUG

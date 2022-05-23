@@ -4,6 +4,7 @@ import br.com.zup.edu.freemium.client.cadastro.NovoAlbumRequest;
 import br.com.zup.edu.freemium.client.detalhes.DetalhesDoAlbumResponse;
 import feign.Response;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.validation.Valid;
 
+@Validated
 @FeignClient(
-    name = "livrariaClient",
+    name = "minhasFigurinhasClient",
     url = "${integrations.resource-server.url}"
 )
 public interface MinhasFigurinhasClient {
